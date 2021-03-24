@@ -1,0 +1,10 @@
+import * as React from 'react';
+
+import { Text, TextProps } from './Themed';
+
+// eslint-disable-next-line import/prefer-default-export
+export function MonoText(props: TextProps): JSX.Element {
+  return (
+    <Text {...props} style={[props.style, { fontFamily: 'space-mono' }]} />
+  );
+}
